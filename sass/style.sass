@@ -1,0 +1,257 @@
+@mixin btn
+    outline: none
+    display: block
+    margin: 0 auto
+    cursor: pointer
+    font-weight: 300
+    font-size: 21px
+    text-align: center
+    color: $color_text
+    width: 313px
+    height: 72px
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.18)
+    border: 4px rgba(0, 0, 0, 0.23)
+    background-image: linear-gradient(to top, #2798b9, #3ab6da)
+    
+@mixin line
+    margin: 0 auto
+    width: 217px
+    height: 4px
+    background-color: #f9bf3b
+$color_text: #ffffff 
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+html
+    font-family: Roboto 
+.container
+    position: relative
+    width: 1140px
+    margin: 0 auto
+.first
+    background-image: url("../img/bg/first_screen.png") 
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    min-height: 850px
+    padding: 39px 0 62px 0
+    &_logo
+        display: block
+        margin: 0 auto
+        width: 83px
+        height: 71px
+    &_text
+        margin-top: 14px
+        text-align: center
+        font-weight: 400px
+        color: $color_text
+        text-transform: uppercase
+    &_btn
+        @include btn
+        margin-top: 73px
+    .title
+        font-size: 41px
+        font-weight: 900px
+        text-align: center
+        color: #f9bf3d
+        text-transform: uppercase    
+    h1.title
+        margin-top: 53px
+    .title_big
+        margin-top: 21px
+        font-size: 80px
+        font-weight: 900px
+        text-align: center
+        text-transform: uppercase
+        color: $color_text
+    h2.title
+        margin-top: 30px
+    .descr
+        margin-top: 23px
+        font-size: 21px
+        font-weight: 300
+        text-align: center
+        color: $color_text
+        span
+            font-weight: bold
+            color: #f9bf3b
+.more
+    margin-top: 73px
+    &_text
+        text-align: center
+        font-size: 15px
+        font-weight: 300
+        color: $color_text
+        text-transform: uppercase
+    &_img
+        display: block
+        margin: 0 auto
+        margin-top: 13px
+.waiting
+    padding: 85px 0 75px 0
+    min-height: 604px
+    background-color: #efefef
+    &_header
+        font-size: 30px
+        text-align: center
+        color: #252525
+        text-transform: uppercase
+    &_line
+        @include line
+        margin-top: 18px
+    &_subheader
+        text-align: center
+        color: #4a4a4a
+        text-align: center
+        margin-top: 17px
+        text-transform: uppercase
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 45px
+    &_text
+        width: 340px
+        margin-top: 33px
+        font-size: 15px
+        font-weight: 300
+        text-align: center
+        color: #4a4a4a
+    &_icon
+        text-align: center
+        width: 339px
+.optimization
+    min-height: 550px
+    padding: 102px 0 107px 0
+    &_header
+        margin-left: 391px
+        font-weight: 900
+        text-align: left
+        color: #299cbd
+        text-transform: uppercase
+    &_text
+        margin-left: 391px
+        text-align: center
+        font-size: 17px
+        font-weight: 300
+        line-height: 27px
+        text-align: justify
+        color: #4a4a4a
+        p
+            margin-top: 25px
+        .strong_text
+            font-weight: bold
+    &_girl
+        position: absolute
+        top: -54px
+        left: -240px
+        z-index: -1
+        height: 502px
+.finish
+    height: 447px
+    padding: 86px 0 79px 0
+    background-image: url(../img/bg/second_screen.png)
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    &_header
+        font-family: Roboto
+        font-size: 30px
+        text-align: center
+        color: #efefef
+        text-transform: uppercase
+    .line
+        @include line
+        margin-top: 23px
+    &_wrapper
+        margin-top: 41px
+        display: flex
+        justify-content: space-between
+    &_descr
+        width: 204px
+    &_round
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        width: 115px
+        height: 115px
+        background-color: #b4e2ff
+        border-radius: 100%  
+    &_text
+        margin-top: 25px
+        min-width: 204px
+        min-height: 53px
+        font-size: 17px
+        font-weight: 300
+        text-align: center
+        color: #efefef
+.present
+    padding: 86px 0 87px 0
+    min-height: 628px
+    background-color: #efefef
+    &_img
+        display: block
+        margin: 0 auto
+    &_text
+        width: 1131px
+        height: 115px
+        font-size: 30px
+        margin-top: 42px
+        text-align: center
+        color: #252525
+    &_btn
+        margin-top: 52px
+        @include btn
+.webinar
+    min-height: 515px
+    padding: 89px 0 64px 0
+    background-color: #ffffff
+    &_img
+        display: block
+        margin: 0 auto
+    &_descr
+        margin-top: 37px
+        text-align: center
+        height: 27px
+        font-size: 30px
+        color: #252525
+    &_text
+        margin-top: 30px
+        text-align: center
+        height: 26px
+        font-size: 36px
+        font-weight: 900
+        color: #299cbd
+    &_little
+        margin-top: 25px
+        text-align: center
+        height: 23px
+        font-size: 23px
+        color: #4a4a4a
+.footer
+    padding: 61px 0 69px 0
+    min-height: 166px
+    background-color: #1a1a1a
+    .links
+        margin: 0 auto
+        width: 377px
+        height: 36px
+        text-align: center
+        a
+            font-size: 15px
+            font-weight: 300
+            color: #888888
+            
+
+
+
+
+
+  
+
+
+
+
+
+
